@@ -31,6 +31,17 @@
     justify-content: flex-start;
     border-bottom: 1px solid $brand_color;
     border-radius: 4px 4px 0 0;
+
+    .blocks-item-title {
+      font-weight: 700;
+    }
+
+    &:hover,
+    &:focus {
+      .blocks-item-title {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

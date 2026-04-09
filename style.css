@@ -1335,6 +1335,12 @@ ul {
   border-bottom: 1px solid $brand_color;
   border-radius: 4px 4px 0 0;
 }
+.blocks-item--with-sections .blocks-item-category-link .blocks-item-title {
+  font-weight: 700;
+}
+.blocks-item--with-sections .blocks-item-category-link:hover .blocks-item-title, .blocks-item--with-sections .blocks-item-category-link:focus .blocks-item-title {
+  text-decoration: underline;
+}
 
 .category-sections-list {
   list-style: none;
