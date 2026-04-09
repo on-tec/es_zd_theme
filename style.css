@@ -860,6 +860,10 @@ ul {
   right: auto;
 }
 
+.support-phone {
+  white-space: nowrap;
+}
+
 #zd-modal-container ~ .skip-navigation {
   display: none;
 }
@@ -1311,6 +1315,95 @@ ul {
 .home-section h2 {
   margin-bottom: 10px;
   text-align: center;
+}
+
+/***** Knowledge base section *****/
+.knowledge-base-subtitle {
+  color: #68737d;
+  font-size: 14px;
+  margin-top: -12px;
+  margin-bottom: 24px;
+}
+
+.blocks-item--with-sections {
+  flex-direction: column;
+  align-items: stretch;
+}
+.blocks-item--with-sections .blocks-item-category-link {
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  border-bottom: 1px solid $brand_color;
+  border-radius: 4px 4px 0 0;
+}
+
+.category-sections-list {
+  list-style: none;
+  padding: 8px 20px 12px;
+  margin: 0;
+  text-align: start;
+}
+
+.blocks-item:hover .blocks-item-category-link,
+.blocks-item:focus .blocks-item-category-link,
+.blocks-item:active .blocks-item-category-link {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+.blocks-item:hover .category-sections-item,
+.blocks-item:hover .category-show-more,
+.blocks-item:focus .category-sections-item,
+.blocks-item:focus .category-show-more,
+.blocks-item:active .category-sections-item,
+.blocks-item:active .category-show-more {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.category-show-more {
+  display: none;
+  padding: 7px 0;
+  font-size: 14px;
+}
+.category-show-more a {
+  font-style: italic;
+}
+
+.category-sections-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.category-sections-item:last-child {
+  border-bottom: none;
+}
+.category-sections-item a {
+  display: block;
+  padding: 7px 0;
+  font-size: 14px;
+  color: $link_color;
+}
+.category-sections-item a:hover, .category-sections-item a:focus {
+  text-decoration: underline;
+  color: $hover_link_color;
+}
+
+/***** Service catalog promo block *****/
+.service-catalog-promo-heading {
+  margin-bottom: 16px;
+}
+.service-catalog-promo-heading a {
+  color: $brand_color;
+  font-size: 22px;
+}
+
+.service-catalog-promo-item {
+  flex: 1 0 100%;
+}
+.service-catalog-promo-item .blocks-item-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.service-catalog-promo-item .blocks-item-description {
+  font-size: 14px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /***** Promoted articles *****/

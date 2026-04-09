@@ -15,7 +15,9 @@
       <ul class="user-nav-list">
         <li>{{link 'community'}}</li>
         <li>{{link 'service_catalog'}}</li>
-        <li>{{link 'new_request' class='submit-a-request'}}</li>
+        {{#if settings.support_phone}}
+          <li><a href="tel:{{settings.support_phone}}" class="support-phone">{{settings.support_phone}}</a></li>
+        {{/if}}
         {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in" role="link"}}
@@ -86,8 +88,11 @@
           <li class="nav-divider"></li>
         {{/if}}
         <li class="item">{{link 'community'}}</li>
-        <li class="item">{{link 'new_request' class='submit-a-request'}}</li>
+        <li class="item">{{#link 'new_request' class='submit-a-request'}}Report an incident{{/link}}</li>
         <li class="item">{{link 'service_catalog'}}</li>
+        {{#if settings.support_phone}}
+          <li class="item"><a href="tel:{{settings.support_phone}}" class="support-phone">{{settings.support_phone}}</a></li>
+        {{/if}}
         <li class="nav-divider"></li>
         {{#if signed_in}}
           <li class="item">

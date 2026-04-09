@@ -255,6 +255,10 @@ $header-height: 71px;
   }
 }
 
+.support-phone {
+  white-space: nowrap;
+}
+
 // Disable the skip-navigation link when modals are open
 #zd-modal-container ~ .skip-navigation {
   display: none;

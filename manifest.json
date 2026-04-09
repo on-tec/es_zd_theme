@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#17494D"
+          "value": "rgba(88, 87, 75, 1)"
         },
         {
           "identifier": "brand_text_color",
@@ -27,28 +27,28 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "#2F3941"
+          "value": "rgba(88, 87, 75, 1)"
         },
         {
           "identifier": "link_color",
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#1F73B7"
+          "value": "rgba(147, 87, 57, 1)"
         },
         {
           "identifier": "hover_link_color",
           "type": "color",
           "description": "hover_link_color_description",
           "label": "hover_link_color_label",
-          "value": "#0F3554"
+          "value": "rgba(222, 148, 76, 1)"
         },
         {
           "identifier": "visited_link_color",
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "rgba(69, 153, 173, 1)"
         },
         {
           "identifier": "background_color",
@@ -224,7 +224,7 @@
           "type": "checkbox",
           "description": "show_brand_name_description",
           "label": "show_brand_name_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "favicon",
@@ -260,6 +260,13 @@
           "type": "file",
           "description": "service_catalog_hero_image_description",
           "label": "service_catalog_hero_image_label"
+        },
+        {
+          "identifier": "show_service_catalog_hero",
+          "type": "checkbox",
+          "description": "show_service_catalog_hero_description",
+          "label": "show_service_catalog_hero_label",
+          "value": false
         }
       ]
     },
@@ -297,7 +304,7 @@
           "type": "checkbox",
           "description": "recent_activity_description",
           "label": "recent_activity_label",
-          "value": true
+          "value": false
         }
       ]
     },
@@ -395,6 +402,18 @@
           "description": "follow_topic_description",
           "label": "follow_topic_label",
           "value": true
+        }
+      ]
+    },
+    {
+      "label": "contact_group_label",
+      "variables": [
+        {
+          "identifier": "support_phone",
+          "type": "text",
+          "description": "support_phone_description",
+          "label": "support_phone_label",
+          "value": "1 (800) 555-0100"
         }
       ]
     }
