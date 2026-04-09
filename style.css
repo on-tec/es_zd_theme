@@ -1400,16 +1400,79 @@ ul {
 
 .service-catalog-promo-item {
   flex: 1 0 100%;
+  background-color: $brand_color;
+  border-color: $brand_color;
+  border-radius: 12px;
+  color: $brand_text_color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 30px;
+  text-align: left;
 }
-.service-catalog-promo-item .blocks-item-title {
-  font-size: 18px;
-  font-weight: 600;
+[dir=rtl] .service-catalog-promo-item {
+  text-align: right;
 }
-.service-catalog-promo-item .blocks-item-description {
+@media (max-width: 768px) {
+  .service-catalog-promo-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.service-catalog-promo-item:hover, .service-catalog-promo-item:focus, .service-catalog-promo-item:active {
+  background-color: $brand_color;
+  filter: brightness(0.92);
+}
+.service-catalog-promo-item:hover *, .service-catalog-promo-item:focus *, .service-catalog-promo-item:active * {
+  color: $brand_text_color;
+}
+
+.service-promo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.service-promo-icon {
+  color: $brand_text_color;
+  opacity: 0.85;
+}
+
+.service-promo-subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin: 0;
+  color: $brand_text_color;
+}
+
+.service-promo-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: $brand_text_color;
+}
+
+.service-promo-right {
+  flex: 1;
+}
+.service-promo-right p {
+  color: $brand_text_color;
   font-size: 14px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.service-promo-link {
+  color: $brand_text_color !important;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.service-promo-link:hover, .service-promo-link:focus {
+  opacity: 0.85;
+  text-decoration: underline;
 }
 
 /***** Promoted articles *****/

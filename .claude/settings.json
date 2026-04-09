@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:nu.edu.kz)",
+      "Bash(curl -s \"https://nu.edu.kz/admissions/programs/\")"
+    ]
+  }
+}

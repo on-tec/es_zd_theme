@@ -16,10 +16,22 @@
     <h2 class="service-catalog-promo-heading">{{#link 'service_catalog'}}Submit a request{{/link}}</h2>
     <ul class="blocks-list">
       <li class="blocks-item service-catalog-promo-item">
-        {{#link 'service_catalog' class='blocks-item-link'}}
-          <span class="blocks-item-title">Explore the Service Catalog</span>
-          <span class="blocks-item-description">Need IT support, software access, or a new device? Browse our full catalog of available services and submit your request in just a few clicks.</span>
-        {{/link}}
+        <div class="service-promo-left">
+          <div class="service-promo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </div>
+          <p class="service-promo-subtitle">Services</p>
+          <p class="service-promo-heading">Explore the Service Catalog</p>
+        </div>
+        <div class="service-promo-right">
+          <p>Need IT support, software access, or a new device? Browse our full catalog of available services and submit your request in just a few clicks.</p>
+          {{#link 'service_catalog' class='service-promo-link'}}Get started →{{/link}}
+        </div>
       </li>
     </ul>
   </section>
